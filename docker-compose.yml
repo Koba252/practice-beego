@@ -1,0 +1,18 @@
+version: '3'
+services:
+  api:
+    container_name: practice-beego-api
+    build:
+      context: .
+      dockerfile: ./api/docker/Dockerfile
+    ports:
+      - 18080:8080
+    env_file: ./api/.env
+    environment:
+      TZ: "Asia/Tokyo"
+    working_dir: /go
+    volumes:
+      - ./api:/go
+    command: >
+      sh
+    tty: true
