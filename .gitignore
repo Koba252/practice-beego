@@ -1,1 +1,7 @@
 .env
+api/pkg
+
+# beego
+api/bin/myapi
+api/myapi/lastupdate.tmp
+api/myapi/myapi
