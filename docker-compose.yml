@@ -8,6 +8,8 @@ services:
     ports:
       - 18080:8080
     env_file: ./api/.env
+    environment:
+      TZ: "Asia/Tokyo"
     working_dir: /go
     volumes:
       - ./api:/go
